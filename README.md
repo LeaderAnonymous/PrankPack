@@ -1,2 +1,2 @@
 # PrankPack
-Useful Pack With Pranks and Tools
+This pack was made by Anonymous Leader.
