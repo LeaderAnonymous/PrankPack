@@ -1,0 +1,1 @@
+msgbox("system32 delete neshta.b detected"), vbYesNo +vbSystemModal + vbQuestion

